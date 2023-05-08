@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aspire Fitness Gym</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <style>
+        body {
+            background: url(bg.jpg);
+            color: white;
+            background-repeat: no-repeat;
+            font-size: large;
+            font-family: 'New Rocker', cursive;
+            height: 1100px;
+        }
+
+        .left {
+            display: inline-block;
+            /* border: 2px solid yellow; */
+            position: absolute;
+            margin-top: 20px;
+            text-align: center;
+        }
+
+        .left img {
+            height: 100px;
+            width: 150px;
+            filter: invert(100%);
+        }
+
+        .mid {
+            display: inline-block;
+            width: 35%;
+            /* border: 2px solid green; */
+            position: absolute;
+            left: 500px;
+            margin-top: 35px;
+            text-align: center;
+
+
+        }
+
+        .right {
+            display: inline-block;
+            /* border: 2px solid red; */
+            position: absolute;
+            right: 34px;
+            margin-top: 40px;
+            text-align: center;
+            width: 15%;
+
+        }
+
+        .navigate {
+            display: inline-block;
+        }
+
+        .navigate li {
+            display: inline-block;
+            padding-right: 30px;
+            font-size: larger;
+
+
+        }
+
+        .navigate li a {
+            color: rgb(248, 137, 11);
+            text-decoration: none;
+        }
+
+        .navigate li :hover {
+            color: rgb(179, 97, 4);
+            text-decoration: underline;
+
+        }
+
+        .btn {
+            font-size: larger;
+            border-radius: 5px;
+            color: white;
+            background-color: rgb(71, 4, 134);
+            border-color: rgb(168, 102, 230);
+
+        }
+
+        .btn a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .btn:hover {
+            background-color: rgb(141, 66, 211);
+            border-color: red;
+        }
+
+        .name {
+            text-align: center;
+        }
+
+        .register {
+            font-size: larger;
+        }
+
+        .heading {}
+
+        .form {
+            top: 20px;
+            font-family: 'New Rocker', cursive;
+            position: absolute;
+            width: 320px;
+            margin-top: 13%;
+            left: 30%;
+            height: 68%;
+            text-align: center;
+            border: 3px solid rgb(243, 145, 16);
+            border-radius: 5px;
+            /* background-color: rgb(83, 65, 134); */
+        }
+
+        .text {
+            font-family: 'New Rocker', cursive;
+            font-size: large;
+            border-radius: 5px;
+            border-color: rgb(238, 18, 18);
+            text-align: center;
+
+        }
+
+        .but {
+            font-family: 'New Rocker', cursive;
+            font-size: large;
+            border-radius: 5px;
+            border-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="left">
+            <img src="logo1.png">
+            <div class="name">
+                ASPIRE FITNESS
+            </div>
+        </div>
+        <div class="mid">
+
+            <ul class="navigate">
+                <li> <a href="#"> Home</a></li><span>
+                    <li> <a href="#"> Classes</a></li>
+                </span>
+                <li><a href="#"> About</a></li><span>
+                    <li> <a href="#"> Contact</a></li>
+                </span>
+
+            </ul>
+        </div>
+        <div class="right">
+            <button class="btn"> <a href="#">Log in</a> </button> &nbsp;&nbsp;
+            <button class="btn"> <a href="#">Sign Up</a> </button>
+
+        </div>
+    </header>
+    <div class="form">
+        <h1 class="heading"> <B> Register Now!!!</B></h1>
+        <form action="noaction.php" class="register">
+
+            <input type="text" class="text" placeholder="Enter Your First Name">
+            <br><br>
+            <input type="text" class="text" placeholder="Enter Your Last Name">
+            <br><br>
+            <input type="date" class="text" style="width: 260px;" placeholder="Enter DOB">
+            <br><br>
+            <input type="email" class="text" placeholder="Enter E-mail">
+            <br><br>
+            <input type="text" class="text" placeholder="Enter Mobile No."><br><br>
+            <button class="but">Submit</button>
+        </form>
+    </div>
+</body>
+
+</html>
